@@ -23,12 +23,14 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
   return(
     <>
       <form action="#">
-        <label htmlFor="number">Insira valor roubado em milhões</label>
+        <label htmlFor="number">Insira o valor roubado em milhões:</label>
+        <br />
         <input 
           type="text" 
           name="number" 
           onChange={e=>handleMortes(e)} 
         />
+        {` `}MILHÕES
         <br />
         <button onClick={e=>handleLimpar(e)}>Limpar</button>
       </form>
