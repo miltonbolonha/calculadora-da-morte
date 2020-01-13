@@ -1,21 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Calculadora from "../components/calculadora"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => {
+  const { expVida } = data.site.siteMetadata
+  const { salarioMinimo } = data.site.siteMetadata
+  console.log(expVida)
+  return(
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Olá cidadão</h1>
+    <p>Cada centavo roubado, é um minuto da vida de uma pessoa.</p>
+    <p>Vamos estimar quantas vidas de trabalhadores, que ganham um salário mínimo, 
+      são necessárias para cobrir o roubo de uma corrupção.</p>
+      <h2>Expectativa de vida média</h2>
+      <h3>{expVida} anos</h3>
+      <h2>Salário mínimo</h2>
+      <h3>R${salarioMinimo}</h3>
+    <Calculadora expVida={expVida} salarioMinimo={salarioMinimo} />
+    <Link to="/info/">Saiba como funciona</Link>
   </Layout>
-)
+)}
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        expVida,
+        salarioMinimo
+      }
+    }
+  }
+`
