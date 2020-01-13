@@ -34,7 +34,7 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
         <br />
         <button onClick={e=>handleLimpar(e)}>Limpar</button>
       </form>
-      <h2>{mortes} vidas foram utilizadas neste roubo.</h2>
+      <h2>{mortes} vidas foram roubadas.</h2>
     </>
   )
 }
