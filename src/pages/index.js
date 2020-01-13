@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => {
   const { expVida } = data.site.siteMetadata
   const { salarioMinimo } = data.site.siteMetadata
-  console.log(expVida)
   return(
   <Layout>
     <SEO title="Home" />
