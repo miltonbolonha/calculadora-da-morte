@@ -21,13 +21,13 @@ const SecondPage = () => (
     <h2>Valor científico e como surgiu</h2>
     <p>A calculadora da morte é uma iniciativa sem caráter científico.</p>
     <p>A ideia surgiu após o desenvolvedor dela ouvir repetidas vezes nos rádios que
-      a corrupção muitas vezes é pior do que os crimes comuns. O que paracia ser mais do 
+      a corrupção muitas vezes é pior do que os crimes comuns. O que parecia ser mais do 
       que evidente para o desenvolvedor.
     </p>
     <h2>Ajude a aprimorar</h2>
     <p>Se você tem uma ideia de como melhorar o algoritmo, nos mande uma mensagem no endereço: <br />
     miltonbolonha@gmail.com</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Voltar para a calculadora</Link>
   </Layout>
 )
 
