@@ -5,18 +5,6 @@ import { withStyles } from '@material-ui/core/styles'
 
 import Input from "../../../static/assets/images/input.png"
 
-export const HtmlTooltip = withStyles(theme => ({
-  tooltip: {
-    backgroundColor: '#000000',
-    color: '#d61d1d',
-    maxWidth: 220,
-    fontSize: 14,
-    border: '1px solid #f47474',
-    textAlign: 'center',
-    padding: '15px 15px 0',
-  },
-}))(Tooltip);
-
 export const CalcForm = styled.form`
   position: relative;
 
@@ -81,3 +69,15 @@ export const RouboInfo = styled.p`
   line-height: 4px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 `
+
+export const HtmlTooltip = withStyles(theme => ({
+  tooltip: {
+    backgroundColor: '#000000',
+    color: '#d61d1d',
+    maxWidth: 220,
+    fontSize: 14,
+    border: '1px solid #f47474',
+    textAlign: 'center',
+    padding: '15px 15px 0',
+  },
+}))(Tooltip);
