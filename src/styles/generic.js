@@ -23,7 +23,7 @@ const GenericStyles = createGlobalStyle`
     vertical-align: baseline;
   }
   *,p,a,h1, h2, h3, h4, h5, h6,
-  input,button,ul,li{    
+  input,button,ul,li, span{    
     font-family: 'Open sans', sans-serif!important;
     outline: none;
   }

@@ -26,14 +26,16 @@ const Layout = ({ children }) => {
       <GenericStyles />
       <BaseStyles />
       <SettingStyles />
-      <Header siteTitle={data.site.siteMetadata.title} />
       <S.LayoutWrapper>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Desenvolvido por
-          {` `}
-          <a href="https://github.com/bolonhadev/">BolonhaDev</a>
-        </footer>
+        <S.LayoutInner>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <main>{children}</main>
+          <S.Footer>
+            © {new Date().getFullYear()}, Desenvolvido por
+            {` `}
+            <a href="https://github.com/bolonhadev/">BolonhaDev</a>
+          </S.Footer>
+        </S.LayoutInner>
       </S.LayoutWrapper>
     </>
   )
