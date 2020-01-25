@@ -1,83 +1,149 @@
 import styled from "styled-components"
 
-import Tooltip from '@material-ui/core/Tooltip'
-import { withStyles } from '@material-ui/core/styles'
-
-import Input from "../../../static/assets/images/input.png"
-
 export const CalcForm = styled.form`
   position: relative;
+  max-width: 320px;
+  margin: 0 auto;
 
   &:before{
     content: 'R$';
     display: inline-block;
     width: 50px;
-    font-size: 20px;
-    color: #f47474;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-shadow: 1px 2px 0 #111111;
     position: absolute;
-    left: 12px;
-    top: 30px;
-    height: 56px;
-    line-height: 56px;
+    left: 0px;
+    top: 0px;
+    height: 70px;
+    line-height: 65px;
+  }
+
+  &:after{
+    content: 'milhões';
+    display: inline-block;
+    width: 50px;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-shadow: 1px 2px 0 #111111;
+    position: absolute;
+    right: 0px;
+    margin-right: 5%;
+    font-weight: 900;
+    top: 0px;
+    height: 70px;
+    line-height: 65px;
   }
 `
-export const CalcInput = styled.input`
-  background-image: url(${Input});
-  background-repeat: no-repeat;
-  width: 478px;
-  min-height: 66px;
-  color: #b02020;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
-  font-size: 28px;
-  padding-left: 60px;
-  padding-bottom: 14px;
-  margin-top: 25px;
+
+export const NumbersWrapper = styled.div`
+  margin: 0 auto 15px;
+  max-width: 320px;
+  width: 100%;
+`
+export const NumbersWrapperMod = styled.div`
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+`
+export const NumbersInner = styled.p`
+  margin: 0;
+  text-align: center;
+  color: #c6c6c6;
+  font-size: 14px;
 `
 
-export const Mortes = styled.h3`
+export const CalcInput = styled.input`
+  background-color: rgb(105, 105, 105);
+    background: linear-gradient(0deg,#1f1f1f 0%,#212121 50%,#1f1f1f 94%);
+    min-height: 45px;
+    margin: 5px 0 0;
+    border-radius: 50px;
+    border: 1px solid #2f2f2f;
+    box-shadow: inset 4px 6px 10px 5px rgba(6, 6, 6, 0.5);
+    text-align: left;
+    line-height: 45px;
+    color: #959595;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0 25% 0 13%;
+    width: 62%;
+`
+
+export const CalcSubmit = styled.input`
+  background-color: rgba(206,42,18,1);
+  background: linear-gradient(90deg, rgba(227,84,10,1) 0%, rgba(237,75,19,1) 50%, rgba(206,42,18,1) 94%);
+  
+
+  min-height: 45px;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 50px;
+  border: 2px solid #f95610;
+  
+  -webkit-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
+  -moz-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
+  box-shadow: -5px -5px 12px 4px rgba(141,141,141,0.2), 8px 8px 30px 6px rgba(0,0,0,0.7), inset 7px 7px 18px 11px rgba(186,32,15,0.5);
+
+  text-shadow: 3px 4px 4px rgba(207, 0, 0, 0.7), -3px -3px 5px rgba(255, 246, 0, 0.3);
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgb(227,84,10);
+    background: linear-gradient(0deg, rgba(227,84,10,1) 0%, rgba(241,83,28,1) 25%, rgba(206,42,18,1) 100%);
+  }
+`
+
+export const Mortes = styled.span`
   color: #d61d1d;
-  font-size: 42px;
+  font-size: 12px;
   font-weight: 900;
   line-height: 40px;
+  margin: 0;
 `
 
-export const MortesLabel = styled.h2`
-  color: #f47474;
-  font-size: 24px;
-  font-weight: 700;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+export const LifesPerMin = styled.span`
+  color: #ff6000;
+  font-size: 38px;
+  font-weight: 600;
 `
 
-export const CalcLabel = styled.p`
-  color: #ffffff;
-  font-size: 24px;
+export const MultipleNumbersWrapper = styled.section`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  & span{
+    margin-bottom: 0;
+  }
+`
+
+export const MultipleNumbersInner = styled.p`
+  font-size: 35px;
+  letter-spacing: 0.2px;
+  display: block;
   text-align: center;
-  position: absolute;
-  right: 0;
-  top: 29px;
-  width: 149px;
-  height: 56px;
-  line-height: 56px;
-  cursor: help;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
-`
+  margin-top: 25px;
+  line-height: 32px;
+  font-weight: 900;
+  width: 100px;
+  overflow: hidden;
 
-export const RouboInfo = styled.p`
-  color: #864646;
-  font-size: 14px;
-  text-align: center;
-  line-height: 4px;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  & span{
+    display:block;
+    font-size: 18px;
+    color: #959595;
+    font-weight: 300;
+  }
 `
-
-export const HtmlTooltip = withStyles(theme => ({
-  tooltip: {
-    backgroundColor: '#000000',
-    color: '#d61d1d',
-    maxWidth: 220,
-    fontSize: 14,
-    border: '1px solid #f47474',
-    textAlign: 'center',
-    padding: '15px 15px 0',
-  },
-}))(Tooltip);

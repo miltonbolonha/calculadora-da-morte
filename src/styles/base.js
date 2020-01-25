@@ -6,7 +6,8 @@ const BaseStyles = createGlobalStyle`
     background: transparent;
   }
   *,p,h1,h2,h3,input{
-    color: #f47474;
+    color: #dcdcdc;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
   }
   body{
     overflow-y: scroll;
@@ -16,17 +17,17 @@ const BaseStyles = createGlobalStyle`
     margin-bottom: 20px;
   }
   a{
-    color: #d61d1d;
+    color: #dcdcdc;
     &:hover{
-      color: #b02020;
+      color: #ff6000;
     }
   }
   strong{
     font-weight: 900;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.47);
   }
-  ::-moz-selection { background: #b02020; color: #f47474; }
-  ::selection { background: #b02020; color: #f47474; }
+  ::-moz-selection { background: #959595; color: #dcdcdc; }
+  ::selection { background: #959595; color: #dcdcdc; }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
