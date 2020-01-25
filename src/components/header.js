@@ -11,6 +11,7 @@ const Header = ({ siteTitle }) => {
         childImageSharp {
           fluid(maxWidth: 320) {
             ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
@@ -22,7 +23,11 @@ const Header = ({ siteTitle }) => {
     <S.Header>
       <h1>
         <Link to="/">
-          <S.LogoImg fluid={data.placeholderImage.childImageSharp.fluid} alt="Develop with Gatsby"  title={siteTitle} />
+          <S.LogoImg 
+            fluid={data.placeholderImage.childImageSharp.fluid} 
+            alt="Develop with Gatsby"  
+            title={siteTitle} 
+          />
         </Link>
       </h1>
     </S.Header>
