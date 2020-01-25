@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Calculadora da Morte`,
-    description: `Quanto a corrupção mata? Com o calculadora da morte você pode ter uma estimativa.`,
+    description: `Quanto a corrupção mata? Com a Calculadora da Morte você pode ter uma estimativa.`,
     author: `@bolonhadev`,
     expVida: 76,
     salarioMinimo: 1045,
