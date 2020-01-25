@@ -14,4 +14,5 @@ export const Header = styled.header`
 export const LogoImg = styled(Img)`
   max-width:320px;
   margin:0 auto;
+  width: 100%;
 `
