@@ -74,12 +74,16 @@ export const CalcInput = styled.input`
   font-weight: 300;
   padding: 0 25% 0 13%;
   width: 62%;
+  outline: none;
 `
 
 export const CalcSubmit = styled.input`
   background-color: rgba(206,42,18,1);
   background: linear-gradient(90deg, rgba(227,84,10,1) 0%, rgba(237,75,19,1) 50%, rgba(206,42,18,1) 94%);
-  
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	outline: none;
   min-height: 45px;
   width: 100%;
   margin: 20px 0 40px;
