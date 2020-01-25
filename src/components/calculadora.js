@@ -42,7 +42,7 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
 
   return(
     <>
-      <S.NumbersWrapper>
+      {/* <S.NumbersWrapper>
         <S.NumbersInner>A cada:</S.NumbersInner>
           <S.NumbersInner>
             <S.LifesPerMin>15 min</S.LifesPerMin>
@@ -50,6 +50,7 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
         <S.NumbersInner>uma vida é consumida<br />
           por esse roubo</S.NumbersInner>
       </S.NumbersWrapper>
+       */}
           <S.NumbersInner>Para pagar temos que trabalhar:</S.NumbersInner>
 
         <S.MultipleNumbersWrapper>
