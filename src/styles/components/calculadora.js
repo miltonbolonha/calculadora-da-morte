@@ -89,7 +89,7 @@ export const CalcSubmit = styled.input`
   margin: 20px 0 40px;
   border-radius: 50px;
   border: 2px solid #f95610;
-  
+  -webkit-tap-highlight-color: transparent;
   -webkit-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
   -moz-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
   box-shadow: -5px -5px 12px 4px rgba(141,141,141,0.2), 8px 8px 30px 6px rgba(0,0,0,0.7), inset 7px 7px 18px 11px rgba(186,32,15,0.5);
