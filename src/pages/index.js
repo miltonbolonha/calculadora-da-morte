@@ -14,10 +14,11 @@ const IndexPage = ({ data, props }) => {
   <Layout>
     <SEO title="Home" />
     <S.SummaryBox>
-      <S.SummaryParagraph>Cada centavo roubado, é um minuto da vida de uma pessoa.</S.SummaryParagraph>
-      <S.SummaryParagraph>Insira abaixo o total do roubo em milhões e estime o tempo
-        e as vidas que a corrupção tira das pessoas.</S.SummaryParagraph>
-        <br />
+      <S.SummaryBoxInner>
+        <S.SummaryParagraph>Cada centavo roubado, é um minuto da vida<br />de uma pessoa.</S.SummaryParagraph>
+        <S.SummaryParagraph>Insira abaixo o total do roubo em milhões e estime o tempo
+          e as vidas que a corrupção<br />tira das pessoas.</S.SummaryParagraph>
+      </S.SummaryBoxInner>
         <S.SummaryParagraph>Exemplo:</S.SummaryParagraph>
         <S.ExampleWrapper>
           <S.ExampleInner><strong>1 milhão de reais</strong> equivale a <strong>80 anos</strong> e 

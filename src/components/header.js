@@ -7,7 +7,7 @@ import * as S from "../styles/components/header"
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "calculadora-da-morte-logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "calculadora-da-morte-logotipo.png" }) {
         childImageSharp {
           fluid(maxWidth: 320) {
             ...GatsbyImageSharpFluid

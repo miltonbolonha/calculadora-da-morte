@@ -10,8 +10,8 @@ export const CalcForm = styled.form`
     display: inline-block;
     width: 50px;
     font-size: 14px;
-    color: #4c4c4c;
-    text-shadow: 1px 2px 0 #111111;
+    color: #1d1d1d;
+    text-shadow: none;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -24,8 +24,8 @@ export const CalcForm = styled.form`
     display: inline-block;
     width: 50px;
     font-size: 14px;
-    color: #4c4c4c;
-    text-shadow: 1px 2px 0 #111111;
+    color: #1d1d1d;
+    text-shadow: none;
     position: absolute;
     right: 0px;
     margin-right: 5%;
@@ -45,6 +45,7 @@ export const NumbersWrapperMod = styled.div`
   margin: 0 auto;
   max-width: 320px;
   width: 100%;
+  font-size: 13px;
 `
 export const NumbersInner = styled.p`
   margin: 0;
@@ -55,29 +56,33 @@ export const NumbersInner = styled.p`
 
 export const CalcInput = styled.input`
   background-color: rgb(105, 105, 105);
-    background: linear-gradient(0deg,#1f1f1f 0%,#212121 50%,#1f1f1f 94%);
-    min-height: 45px;
-    margin: 5px 0 0;
-    border-radius: 50px;
-    border: 1px solid #2f2f2f;
-    box-shadow: inset 4px 6px 10px 5px rgba(6, 6, 6, 0.5);
-    text-align: left;
-    line-height: 45px;
-    color: #959595;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 0 25% 0 13%;
-    width: 62%;
+  background: linear-gradient(356deg, rgba(50,50,50,1) 0%, rgba(58,58,58,1) 50%, rgba(50,50,50,1) 94%);
+  box-shadow: #8d8d8d;
+  -webkit-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
+
+  min-height: 45px;
+  margin: 5px 0 0;
+  border-radius: 50px;
+  border: 1px solid #2f2f2f;
+  
+  text-align: left;
+  line-height: 45px;
+  color: #959595;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 25% 0 13%;
+  width: 62%;
 `
 
 export const CalcSubmit = styled.input`
   background-color: rgba(206,42,18,1);
   background: linear-gradient(90deg, rgba(227,84,10,1) 0%, rgba(237,75,19,1) 50%, rgba(206,42,18,1) 94%);
   
-
   min-height: 45px;
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0 40px;
   border-radius: 50px;
   border: 2px solid #f95610;
   

@@ -11,6 +11,9 @@ export const SummaryParagraph = styled.p`
   max-width: 300px;
   margin: 5px auto;
 `
+export const SummaryBoxInner = styled.div`
+  margin-bottom: 20px;
+`
 
 export const InfoBoxWrapper = styled.section`
   display: flex;

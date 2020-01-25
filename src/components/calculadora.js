@@ -10,13 +10,11 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
   const [mortes, setMortes] = useState(0);
   const [dias, setDias] = useState(0);
   const [anos, setAnos] = useState(0);
-
   function handleMortes(e){
     e.preventDefault()
     const r = e.target.number.value
     const a = r*x
     const d = r*x*356
-    
     if(!isNaN(r) && r>0){
       const f = Math.ceil(r/v*1000000)
       setMortes(checkThousand(f))
@@ -42,23 +40,12 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
 
   return(
     <>
-      {/* <S.NumbersWrapper>
-        <S.NumbersInner>A cada:</S.NumbersInner>
-          <S.NumbersInner>
-            <S.LifesPerMin>15 min</S.LifesPerMin>
-          </S.NumbersInner>
-        <S.NumbersInner>uma vida é consumida<br />
-          por esse roubo</S.NumbersInner>
-      </S.NumbersWrapper>
-       */}
-          <S.NumbersInner>Para pagar temos que trabalhar:</S.NumbersInner>
-
-        <S.MultipleNumbersWrapper>
-          <S.MultipleNumbersInner>{dias} <span>dias</span></S.MultipleNumbersInner>
-          <S.MultipleNumbersInner>{anos} <span>anos</span></S.MultipleNumbersInner>
-          <S.MultipleNumbersInner>{mortes} <span>vidas</span></S.MultipleNumbersInner>
-        </S.MultipleNumbersWrapper>
-      
+      <S.NumbersInner>Para pagar temos que trabalhar:</S.NumbersInner>
+      <S.MultipleNumbersWrapper>
+        <S.MultipleNumbersInner>{dias} <span>dias</span></S.MultipleNumbersInner>
+        <S.MultipleNumbersInner>{anos} <span>anos</span></S.MultipleNumbersInner>
+        <S.MultipleNumbersInner>{mortes} <span>vidas</span></S.MultipleNumbersInner>
+      </S.MultipleNumbersWrapper>
       <S.NumbersWrapperMod>Insira o valor roubado:</S.NumbersWrapperMod>
       <S.CalcForm onSubmit={e=>handleMortes(e)}>
         <S.CalcInput 

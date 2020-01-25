@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.header`
 export const Header = styled.header`
   margin: 0 auto;
   max-width: 460px;
-  padding: 1.45rem 1.0875rem 0;
+  padding: 1rem 0 0;
   text-align: center;
 `
 
