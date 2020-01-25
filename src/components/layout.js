@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           <S.Footer>
             © {new Date().getFullYear()}, Desenvolvido por
             {` `}
-            <a href="https://github.com/bolonhadev/">BolonhaDev</a>
+            <a href="https://github.com/bolonhadev/" target="_blank" rel="noopener noreferrer">BolonhaDev</a>
           </S.Footer>
         </S.LayoutInner>
       </S.LayoutWrapper>

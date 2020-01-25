@@ -8,6 +8,8 @@ export const LayoutWrapper = styled.div`
   padding-top: 0;
   text-align: center;
 
+  min-height: 100vh;
+
   border: 1px solid #212f4a;
   border-radius: 25px;
 
