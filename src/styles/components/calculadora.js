@@ -120,11 +120,11 @@ export const Mortes = styled.span`
   margin: 0;
 `
 
-export const LifesPerMin = styled.span`
-  color: #ff6000;
-  font-size: 37px;
-  font-weight: 600;
-`
+// export const LifesPerMin = styled.span`
+//   color: #ff6000;
+//   font-size: 38px;
+//   font-weight: 600;
+// `
 
 export const MultipleNumbersWrapper = styled.section`
   display: flex;
@@ -142,7 +142,7 @@ export const MultipleNumbersWrapper = styled.section`
 `
 
 export const MultipleNumbersInner = styled.p`
-  font-size: 35px;
+  font-size: 34px;
   letter-spacing: 0.2px;
   display: block;
   text-align: center;
