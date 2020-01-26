@@ -122,7 +122,7 @@ export const Mortes = styled.span`
 
 export const LifesPerMin = styled.span`
   color: #ff6000;
-  font-size: 38px;
+  font-size: 37px;
   font-weight: 600;
 `
 
