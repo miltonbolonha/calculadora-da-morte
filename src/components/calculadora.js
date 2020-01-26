@@ -14,7 +14,7 @@ const Calculadora = ({ expVida, salarioMinimo }) => {
     e.preventDefault()
     const r = e.target.number.value
     const a = r*x
-    const d = r*x*356
+    const d = r*x*365
     if(!isNaN(r) && r>0){
       const f = Math.ceil(r/v*1000000)
       setMortes(checkThousand(f))
