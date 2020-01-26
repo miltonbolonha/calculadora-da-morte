@@ -29,7 +29,7 @@ export const CalcForm = styled.form`
     position: absolute;
     right: 0px;
     margin-right: 5%;
-    font-weight: 900;
+    font-weight: 700;
     top: 0px;
     height: 70px;
     line-height: 65px;
@@ -55,23 +55,24 @@ export const NumbersInner = styled.p`
 `
 
 export const CalcInput = styled.input`
-  background-color: rgb(105, 105, 105);
-  background: linear-gradient(356deg, rgba(50,50,50,1) 0%, rgba(58,58,58,1) 50%, rgba(50,50,50,1) 94%);
+  background-color: rgb(210, 210, 210);
+  background: linear-gradient(356deg,rgb(175, 175, 175) 0%,rgb(210, 210, 210) 50%,rgb(175, 175, 175) 94%);
   box-shadow: #8d8d8d;
-  -webkit-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
 
   min-height: 45px;
   margin: 5px 0 0;
   border-radius: 50px;
-  border: 1px solid #2f2f2f;
+  border: 1px solid #8d8d8d;
+  text-shadow: none;
   
   text-align: left;
   line-height: 45px;
-  color: #959595;
+  color: #2f2f2f;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 800;
   padding: 0 25% 0 13%;
   width: 62%;
   outline: none;
@@ -86,9 +87,11 @@ export const CalcSubmit = styled.input`
 	outline: none;
   min-height: 45px;
   width: 100%;
+  max-width: 320px;
+  padding: 0;
   margin: 20px 0 40px;
   border-radius: 50px;
-  border: 2px solid #f95610;
+  border: 1px solid rgb(195, 73, 21);
   -webkit-tap-highlight-color: transparent;
   -webkit-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
   -moz-box-shadow: -6px -6px 14px 14px rgba(141,141,141,0.2);
@@ -99,7 +102,7 @@ export const CalcSubmit = styled.input`
   line-height: 45px;
   color: #fff;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
 
   cursor: pointer;
 
@@ -112,7 +115,7 @@ export const CalcSubmit = styled.input`
 export const Mortes = styled.span`
   color: #d61d1d;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 40px;
   margin: 0;
 `
@@ -145,7 +148,7 @@ export const MultipleNumbersInner = styled.p`
   text-align: center;
   margin-top: 25px;
   line-height: 32px;
-  font-weight: 900;
+  font-weight: 800;
   width: 100px;
   overflow: hidden;
 
